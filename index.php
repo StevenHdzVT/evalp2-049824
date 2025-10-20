@@ -77,7 +77,7 @@ if ($_POST) {
 </head>
 <body>
     <div class="login-container">
-        <img src="assets/ejercicios.jpg" alt="Imagen de ejercicios" class="login-image">
+        <img src="assets/figuras_2.png" alt="Imagen de ejercicios" class="login-image">
         <h2>Iniciar Sesión</h2>
         
         <?php if (isset($error)): ?>
