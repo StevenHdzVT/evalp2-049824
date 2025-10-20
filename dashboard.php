@@ -39,6 +39,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
+            margin-top: 20px;
         }
         .logout-btn:hover {
             background-color: #c82333;
@@ -53,11 +54,49 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             border-radius: 5px;
             border-left: 4px solid #007bff;
         }
+        .exercise-buttons {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .exercise-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .exercise-btn:hover {
+            background-color: #218838;
+        }
+        .exercise-btn.ejercicio2 {
+            background-color: #17a2b8;
+        }
+        .exercise-btn.ejercicio2:hover {
+            background-color: #138496;
+        }
+        .exercise-btn.ejercicio3 {
+            background-color: #ffc107;
+            color: #212529;
+        }
+        .exercise-btn.ejercicio3:hover {
+            background-color: #e0a800;
+        }
     </style>
 </head>
 <body>
     <div class="dashboard-container">
         <h1 class="welcome">¡Bienvenido, <?php echo htmlspecialchars($_SESSION['usuario']); ?>!</h1>
+        
+        <div class="exercise-buttons">
+            <a href="ejercicio2.php" class="exercise-btn ejercicio2">Ejercicio 2: Cálculo de Cilindro</a>
+            <a href="ejercicio3.php" class="exercise-btn ejercicio3">Ejercicio 3: Cálculo de Rectángulo</a>
+        </div>
         
         <div class="features">
             <h2>Panel de Control</h2>
