@@ -94,8 +94,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <h1 class="welcome">¡Bienvenido, <?php echo htmlspecialchars($_SESSION['usuario']); ?>!</h1>
         
         <div class="exercise-buttons">
-            <a href="ejercicio2.php" class="exercise-btn ejercicio2">Ejercicio 2: Cálculo de Cilindro</a>
-            <a href="ejercicio3.php" class="exercise-btn ejercicio3">Ejercicio 3: Cálculo de Rectángulo</a>
+            <a href="ejercicio2.php" class="exercise-btn ejercicio2">Ejercicio 2: Cálculos Geométricos</a>
+            <a href="ejercicio3.php" class="exercise-btn ejercicio3">Ejercicio 3: Próximamente</a>
         </div>
         
         <div class="features">
